@@ -1,0 +1,432 @@
+/* Estilos del cuerpo */
+body {
+    background-color: #f4f4f9; /* Color de fondo claro */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(135deg, #0f71cd, #00ff3c9d); /* Degradado verde */
+    color: #ffffff; /* Blanco */
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.167);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Amarillo */
+    transform: scale(1.1); /* Efecto de hover */
+}
+
+/* Sección de introducción */
+#intro {
+    padding: 50px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#intro h2 {
+    font-size: 40px;
+    color: #000000; /* Verde */
+}
+
+#intro p {
+    font-size: 22px;
+    color: #000000;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Sección de servicios */
+#services {
+    padding: 50px 20px;
+    background-color: rgb(255, 255, 255); /* Fondo semitransparente */
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#services h2 {
+    font-size: 40px;
+    color: #000000; /* Azul */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Elementos de servicios */
+.service-item {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #c3ebf4; /* Verde claro */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(93, 92, 92, 0);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 28px;
+    color: #4caf50; /* Verde */
+    margin-bottom: 10px;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.service-item p {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .service-item {
+        margin: 20px 0;
+    }
+
+    .service-item img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Íconos sociales */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 15px;
+}
+
+.social-icons li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Botones */
+button {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+    transform: scale(1.05);
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo claro */
+    color: #333; /* Texto oscuro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077cc; /* Azul atractivo */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f00; /* Naranja */
+}
+
+/* Sección de "Sobre Mí" */
+#sobre-mi {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px; /* Limitar el ancho del contenido */
+    margin: auto; /* Centrar */
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000; /* Azul */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-left: 4px solid #0077cc; /* Línea lateral */
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    background-color: #0077cc; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #ff7f00; /* Naranja */
+    transform: scale(1.05); /* Aumentar ligeramente */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo claro */
+    color: #333; /* Texto oscuro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077cc; /* Azul atractivo */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f00; /* Naranja */
+}
+
+/* Sección de Contacto */
+#contact {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px; /* Limitar el ancho del contenido */
+    margin: auto; /* Centrar */
+}
+
+h2 {
+    font-size: 30px;
+    color: #0077cc; /* Azul */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Apilar elementos */
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #cccccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #0077cc; /* Borde azul al enfocar */
+}
+
+textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+/* Botón */
+.button {
+    margin-top: 20px;
+    background-color: #0077cc; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor a mano */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #ff7f00; /* Naranja */
+    transform: scale(1.05); /* Aumentar ligeramente */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.visible {
+    opacity: 1;
+}
